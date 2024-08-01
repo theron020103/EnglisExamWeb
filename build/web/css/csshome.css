@@ -1,0 +1,211 @@
+center/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 thg 3, 2024, 23:00:42
+    Author     : ACER
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px; /* Thêm padding-top để tránh chồng lấn với header */
+    padding-bottom: 50px; /* Thêm padding-bottom để tạo khoảng cách với footer */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right; /* Di chuyển nút logout sang bên phải */
+}
+.btn-submit {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto; /* Để căn giữa */
+    display: block; /* Để thẻ input trở thành một khối và có thể áp dụng margin */
+}
+
+.btn-submitLeft {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    display: block; /* Để thẻ input trở thành một khối và có thể áp dụng margin */
+}
+.btn-delete {
+    margin-top: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    display: block; /* Để thẻ input trở thành một khối và có thể áp dụng margin */
+}
+/* Định dạng cho input type text */
+input.text {
+    margin-top: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc; /* Sửa thành 1px solid để hiển thị rõ ràng hơn */
+    padding: 10px; /* Sửa giá trị padding để điều chỉnh khoảng cách bên trong */
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Hiển thị dạng block để chiếm toàn bộ chiều rộng của phần tử cha */
+    width: calc(30% - 20px); /* Sử dụng calc để trừ đi khoảng cách padding của cả hai bên */
+    box-sizing: border-box; /* Tính cả padding vào kích thước của input */
+    margin: 0 auto; /* Để căn giữa */
+}
+input.textLeft {
+    margin-top: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc; /* Sửa thành 1px solid để hiển thị rõ ràng hơn */
+    padding: 10px; /* Sửa giá trị padding để điều chỉnh khoảng cách bên trong */
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Hiển thị dạng block để chiếm toàn bộ chiều rộng của phần tử cha */
+    width: calc(30% - 20px); /* Sử dụng calc để trừ đi khoảng cách padding của cả hai bên */
+    box-sizing: border-box; /* Tính cả padding vào kích thước của input */
+    text-align: left;  /* Để căn giữa */
+}
+.centered-link {
+    font-size: 25px;
+    display: block;
+    width: fit-content; /* Đảm bảo rằng chiều rộng của liên kết chỉ cần đủ để chứa nội dung */
+    margin: 10px auto 0; /* Để căn giữa */
+    text-align: center; /* Để căn giữa nội dung của liên kết */
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.large-heading {
+    font-size: 50px; /* Đặt kích thước chữ là 36px hoặc kích thước mong muốn của bạn */
+}
+.welcome-message {
+    text-align: center;
+    margin-top: 10px; /* Có thể điều chỉnh giá trị này để căn chỉnh khoảng cách từ header */
+    font-size: 36px; /* Kích thước font lớn hơn */
+    font-family: "Arial", sans-serif; /* Chọn font chữ */
+    font-weight: bold; /* Đậm */
+    color: #fff; /* Màu chữ */
+    background-color: #000; /* Màu nền mới */
+    padding: 20px; /* Thêm padding để tạo khoảng cách xung quanh nội dung */
+    
+}
+
+.listquiz-message {
+    text-align: center;
+    margin-top: 1px; /* Có thể điều chỉnh giá trị này để căn chỉnh khoảng cách từ header */
+    font-size: 36px; /* Kích thước font lớn hơn */
+    font-family: "Arial", sans-serif; /* Chọn font chữ */
+    font-weight: bold; /* Đậm */
+    color: #fff; /* Màu chữ */
+    background-color: #000; /* Màu nền mới */
+    padding: 10px; /* Thêm padding để tạo khoảng cách xung quanh nội dung */
+    width: 97%;
+    margin: 0 auto;
+    line-height: 0.5; /* Điều chỉnh khoảng cách giữa các dòng */
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    font-family: Arial, sans-serif; /* Thay đổi kiểu chữ */
+    border-collapse: collapse;
+    width: 80%; /* Độ rộng của bảng */
+    background-color: #000; /* Màu nền là màu đen */
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    color: #fff; /* Màu chữ là màu trắng */
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(4) {
+    width: 50px; /* Độ rộng cố định của cột 1, 2 và 4 */
+}
+
+.question {
+    text-align: left;
+    margin-top: 20px; /* Có thể điều chỉnh giá trị này để căn chỉnh khoảng cách từ header */
+    font-size: 16px; /* Kích thước font lớn hơn */
+    font-family: "Arial", sans-serif; /* Chọn font chữ */
+    font-weight: normal; /* Đậm */
+    color: #000; /* Màu chữ */
+    background-color: #B5F4FF; /* Màu nền mới */ 
+    padding: 20px; /* Thêm padding để tạo khoảng cách xung quanh nội dung */
+    border-radius: 15px; /* Bo các góc của phần nền */
+    width: 75%;
+    margin-left: auto; /* Căn giữa theo chiều ngang */
+    margin-right: auto; /* Căn giữa theo chiều ngang */
+}
+
+.back{
+    background-color: #333; /* Màu nền mới */ 
+    width: 97%;
+    margin-bottom: 100px;
+    line-height: 0.5;
+}
+
